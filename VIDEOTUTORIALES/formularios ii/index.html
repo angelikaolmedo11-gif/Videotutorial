@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulariosii</title>
+</head>
+<body>
+    <h1>tipos de inputs</h1>
+    <form action="/procesareserva.php" method="get">
+    <fieldset>
+        <legend>datos Personales</legend>
+    <p>
+        <label for="nom">nombre:</label>
+        <input type="text" maxlength="6" 
+        name="nom"
+        id="nom">
+    </p>
+    <p>
+        <label for="contrase">contraseña:</label>
+        <input type="password"
+        maxlength="6"
+        name="contrase"
+        id="contrase">
+    </p>
+    <p>
+        <label for="hombre">hombre</label>
+        <input type="radio" value="H"
+        checked id="hombre" name="genero">
+        <label for="mujer">mujer</label>
+        <input type="radio" value="M"
+        checked id="mujer" name="genero">
+    </p>
+    <p>
+        <label for="fumador">fumador</label>
+        <input type="checkbox" name="fuma"
+        id="fumador">
+    </p>
+</fieldset>
+    <p>
+        <label for="prov">provincia</label>
+        <select name="prov" id="pro">
+            <option value="cr">ciudad real</option>
+            <option value="ab">albacete</option>
+            <option value="gu">guadalajara</option>
+            <option value="cu">cuenca</option>
+            <option value="to">toledo</option>
+        </select>
+        <p>
+            <label for="obs">observaciones</label>
+            <textarea name="obs" 
+            id="obs"
+            cols="10" rows="6">
+            escriba algo
+        </textarea>
+        </p>
+        <p>
+            <label for="color">color:</label>
+            <input type="color" name="color"
+            id="color">
+        </p>
+        <p>
+            <label for="fecha-nac">fecha de nacimiento:</label>
+            <input type="date" name="fecha-nac"
+            id="fecha-nac">
+        </p>
+        <p>
+            <label for="edad">edad:</label>
+            <input type="number" name="edad"
+            id="edad" min="0" max="100">
+        </p>
+        <p>
+            <label for="email">email</label>
+            <input type="email" name="email"
+            id="email">
+        </p>
+        <p>
+            <label for="foto">adjuntar foto</label>
+            <input type="file" name="foto"
+            id="foto">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="reiniciar">
+    </p>
+    <a href="/enlaces-paginas/index.html">volver a página de enlaces-paginas</a><br>
+
+</body>
+</html>

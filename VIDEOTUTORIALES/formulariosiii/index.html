@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ultimos input</h1>
+    <form action="/procesareserva.php" method="get">
+    <p>
+        <label for="pob">poblacion</label>
+        <input type="text" value="tomelloso" maxlength="50"
+        name="pob" disabled
+        id="pob">
+    </p>
+    <p>
+        <label for="nom">nombre:</label>
+        <input type="text" maxlength="6" 
+        name="nom" placeholder="escriba su nombre completo"
+        id="nom" required autofocus>
+    </p>
+    <p>
+        <label for="fumador">fumador</label>
+        <input type="checkbox" name="fuma"
+        id="fumador" checked>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="reiniciar">
+    </p>
+    <p>
+        <label for="edad">edad:</label>
+            <input type="number" name="edad"
+            id="edad" min="0" max="100">
+    </p>
+    <a href="/enlaces-paginas/index.html">volver a página de enlaces-paginas</a><br>
+</body>
+</html>
